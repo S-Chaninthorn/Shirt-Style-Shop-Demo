@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shirt Style Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>SHIRT STYLE SHOP</h1>
+  <p>Fashion is your identity.</p>
+  <div class="cart">🛒 ตะกร้า (<span id="cart-count">0</span>)</div>
+</header>
+
+<nav id="categories">
+  <button class="active" data-category="all">ทั้งหมด</button>
+  <button data-category="เสื้อยืด">เสื้อยืด</button>
+  <button data-category="เสื้อครอป">เสื้อครอป</button>
+  <button data-category="เสื้อกันหนาว">เสื้อกันหนาว</button>
+  <button data-category="กางเกง">กางเกง</button>
+</nav>
+
+<section class="banner">
+  <div>
+    <h2>YOUR STYLE, YOUR WAY!</h2>
+    <p>ค้นหาสไตล์ที่เป็นคุณ แต่งตัวให้สนุกในทุกวัน</p>
+    <a href="#products" class="shop-btn">SHOP NOW</a>
+  </div>
+  <div class="banner-images">
+    <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=500"
+         alt="ตัวอย่างแฟชั่นวัยรุ่น">
+    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500"
+         alt="ตัวอย่างการแต่งตัว">
+  </div>
+</section>
+
+<main id="products">
+  <h2>OUR COLLECTION</h2>
+  <input type="text" id="search" placeholder="ค้นหาสินค้า...">
+  <div class="product-grid" id="product-list"></div>
+</main>
+
+<section class="cart-section">
+  <h2>🛒 ตะกร้าสินค้า</h2>
+  <div id="cart-items">ยังไม่มีสินค้าในตะกร้า</div>
+  <h3>ราคารวม: ฿<span id="total">0</span></h3>
+  <button id="clear-cart" class="clear-btn">ล้างตะกร้า</button>
+</section>
+
+<footer>
+  <h3>SHIRT STYLE SHOP</h3>
+  <p>Fashion is your identity.</p>
+  <p>© 2026 Shirt Style Shop</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
